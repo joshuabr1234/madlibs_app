@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "name": "react-redux-router",
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
@@ -8,6 +9,16 @@
   "version": "1.0.0",
   "description": "Basic skeleton codebase for React/Router applications.",
 >>>>>>> 960a9ea (initial commit)
+=======
+  "name": "react-router",
+  "version": "1.0.0",
+  "description": "Basic skeleton codebase for React/Router applications.",
+=======
+  "name": "react-redux-router",
+  "version": "1.0.0",
+  "description": "Basic skeleton codebase for React/Redux/Router applications.",
+>>>>>>> d09463b6576a26fd36e7bfeaba368964c2e4c452
+>>>>>>> b278b35823e9e60f1477e1c4761415d679313dc3
   "scripts": {
     "preinstall": "npm set audit false",
     "start": "webpack-dev-server --config webpack/dev.config.js --watch",
@@ -63,10 +74,17 @@
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.13.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "npm": "^8.1.4",
 =======
     "npm": "^8.2.0",
 >>>>>>> 960a9ea (initial commit)
+=======
+    "npm": "^8.2.0",
+=======
+    "npm": "^8.1.4",
+>>>>>>> d09463b6576a26fd36e7bfeaba368964c2e4c452
+>>>>>>> b278b35823e9e60f1477e1c4761415d679313dc3
     "postcss-loader": "^2.1.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",

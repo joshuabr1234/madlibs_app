@@ -3,6 +3,12 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+<<<<<<< HEAD
 #project
 dist/
 env.js
+=======
+# project
+dist/
+env.js
+>>>>>>> 960a9ea (initial commit)

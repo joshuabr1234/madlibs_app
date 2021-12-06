@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
     Col,
-    Row
+    Row,
+    Card
 } from 'reactstrap';
 
 class MadlibForm extends Component {
@@ -29,68 +30,77 @@ class MadlibForm extends Component {
     render() {
 
       return (
-        <Row style={{textAlign: 'center', color: 'white'}}>
-            <Col md="3" className="inputWrapper">
-                <Row>
-                    <Col md="2">
-                        <label className="greenLabel">1</label>
+        <div className='card-wrapper'>
+            <Card>
+                <Row style={{textAlign: 'center', color: 'white'}}>
+                    <Col md="3" className="input-wrapper">
+                        <Row>
+                            <Col md="2">
+                                <label className="green-label">1</label>
+                            </Col>
+                            <Col md="10">
+                                <input placeholder='Color' type='text' onChange={this.handleChange({inputTitle: 'color'})} />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md="2"></Col>
+                            <Col md="10">
+                                <label className="input-description">Color</label>
+                            </Col>
+                        </Row>
                     </Col>
-                    <Col md="10">
-                        <input placeholder='Color' type='text' onChange={this.handleChange({inputTitle: 'color'})} />
+                    <Col md="3" className="input-wrapper">
+                        <Row>
+                            <Col md="2">
+                                <label className="green-label">1</label>
+                            </Col>
+                            <Col md="10">
+                                <input placeholder='Noun (Plural)' type='text' onChange={this.handleChange({inputTitle: 'pluralNoun'})}  />
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md="2"></Col>
+                            <Col md="10">
+                                <label className="input-description">Noun (Plural)</label>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col md="3" className="input-wrapper">
+                        <Row>
+                            <Col md="2">
+                                <label className="green-label">1</label>
+                            </Col>
+                            <Col md="10">
+                                <input placeholder='Adjective' type='text' onChange={this.handleChange({inputTitle: 'adjectiveOne'})}  />
+                            </Col>
+                        </Row>
+                        <Row>
+                        <   Col md="2"></Col>
+                            <Col md="10">
+                                <label className="input-description">Adjective</label>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col md="3" className="input-wrapper">
+                        <Row>
+                            <Col md="2">
+                                <label className="green-label">1</label>
+                            </Col>
+                            <Col md="10">
+                                <input placeholder='Celebrity' type='text' onChange={this.handleChange({inputTitle: 'celebrityOne'})} />
+                            </Col>
+                            <Row>
+                            <Col md="2"></Col>
+                            <Col md="10">
+                                <label className="input-description">Celebrity</label>
+                            </Col>
+                        </Row>
+                        </Row>
                     </Col>
                 </Row>
-                <Row>
-                    <Col md="12">
-                        <label className="inputDescription">Color</label>
-                    </Col>
-                </Row>
-            </Col>
-            <Col md="3" className="inputWrapper">
-                <Row>
-                    <Col md="2">
-                        <label className="greenLabel">1</label>
-                    </Col>
-                    <Col md="10">
-                        <input placeholder='Noun (Plural)' type='text' onChange={this.handleChange({inputTitle: 'pluralNoun'})}  />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col md="12">
-                        <label className="inputDescription">Noun (Plural)</label>
-                    </Col>
-                </Row>
-            </Col>
-            <Col md="3" className="inputWrapper">
-                <Row>
-                    <Col md="2">
-                        <label className="greenLabel">1</label>
-                    </Col>
-                    <Col md="10">
-                        <input placeholder='Adjective' type='text' onChange={this.handleChange({inputTitle: 'adjectiveOne'})}  />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col md="12">
-                        <label className="inputDescription">Adjective</label>
-                    </Col>
-                </Row>
-            </Col>
-            <Col md="3" className="inputWrapper">
-                <Row>
-                    <Col md="2">
-                        <label className="greenLabel">1</label>
-                    </Col>
-                    <Col md="10">
-                        <input placeholder='Celebrity' type='text' onChange={this.handleChange({inputTitle: 'celebrityOne'})} />
-                    </Col>
-                    <Row>
-                    <Col md="12">
-                        <label className="inputDescription">Celebrity</label>
-                    </Col>
-                </Row>
-                </Row>
-            </Col>
-        </Row>
+            </Card>
+            
+        </div>
       );
     }
 }
